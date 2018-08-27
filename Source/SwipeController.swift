@@ -224,7 +224,7 @@ class SwipeController: NSObject {
             actionsView.widthAnchor.constraint(equalTo: swipeable.widthAnchor, multiplier: 2).isActive = true
             actionsView.topAnchor.constraint(equalTo: swipeable.topAnchor).isActive = true
         } else {
-            actionsView.addConstraints([
+            swipeable.addConstraints([
                 NSLayoutConstraint(item: actionsView, attribute: .height, relatedBy: .equal, toItem: swipeable, attribute: .height, multiplier: 1.0, constant: 0.0),
                 NSLayoutConstraint(item: actionsView, attribute: .width, relatedBy: .equal, toItem: swipeable, attribute: .width, multiplier: 2.0, constant: 0.0),
                 NSLayoutConstraint(item: actionsView, attribute: .top, relatedBy: .equal, toItem: swipeable, attribute: .top, multiplier: 1.0, constant: 0.0)
